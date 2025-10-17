@@ -4,27 +4,27 @@ import { Star } from "lucide-react";
 const Testimonials = () => {
   const testimonials = [
     {
-      name: "Sarah Chen",
-      role: "Business Professional",
-      content: "Aruzhan's teaching methods helped me pass my HSK 4 exam with flying colors! Her patient approach and cultural insights made learning Chinese enjoyable and effective.",
+      name: "Сара Чен",
+      role: "Бизнес-профессионал",
+      content: "Методы преподавания Аружан помогли мне сдать экзамен HSK 4 с отличием! Её терпеливый подход и культурные знания сделали изучение китайского языка приятным и эффективным.",
       rating: 5
     },
     {
-      name: "Michael Rodriguez",
-      role: "University Student",
-      content: "I went from struggling with English essays to confidently writing my thesis. Aruzhan's personalized feedback and structured lessons were exactly what I needed.",
+      name: "Михаил Родригес",
+      role: "Студент университета",
+      content: "Я перешёл от трудностей с английскими эссе к уверенному написанию диссертации. Персонализированная обратная связь и структурированные уроки Аружан были именно тем, что мне было нужно.",
       rating: 5
     },
     {
-      name: "Li Wei",
-      role: "Career Changer",
-      content: "Thanks to Aruzhan, I improved my business English significantly. She understood my goals and tailored every lesson to help me succeed in my new international role.",
+      name: "Ли Вей",
+      role: "Смена карьеры",
+      content: "Благодаря Аружан я значительно улучшил свой деловой английский. Она понимала мои цели и адаптировала каждый урок, чтобы помочь мне преуспеть на новой международной должности.",
       rating: 5
     },
     {
-      name: "Emma Thompson",
-      role: "Language Enthusiast",
-      content: "Learning Mandarin seemed impossible until I found Aruzhan. Her teaching style is engaging and effective. I'm now confidently having conversations in Chinese!",
+      name: "Эмма Томпсон",
+      role: "Энтузиаст языков",
+      content: "Изучение китайского казалось невозможным, пока я не нашла Аружан. Её стиль преподавания увлекательный и эффективный. Теперь я уверенно веду разговоры на китайском!",
       rating: 5
     }
   ];
@@ -34,10 +34,10 @@ const Testimonials = () => {
       <div className="container px-4 mx-auto">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-            What Students Say
+            Что говорят ученики
           </h2>
           <p className="text-lg text-muted-foreground">
-            Join hundreds of satisfied students who've achieved their language goals
+            Присоединяйтесь к сотням довольных учеников, которые достигли своих языковых целей
           </p>
         </div>
 

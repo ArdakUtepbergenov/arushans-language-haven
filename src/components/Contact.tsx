@@ -19,8 +19,8 @@ const Contact = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     toast({
-      title: "Message Sent!",
-      description: "Thank you for your interest. I'll get back to you within 24 hours.",
+      title: "Сообщение отправлено!",
+      description: "Спасибо за ваш интерес. Я отвечу вам в течение 24 часов.",
     });
     setFormData({ name: "", email: "", language: "", message: "" });
   };
@@ -37,10 +37,10 @@ const Contact = () => {
       <div className="container px-4 mx-auto">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-            Start Your Language Journey Today
+            Начните свой языковой путь сегодня
           </h2>
           <p className="text-lg text-muted-foreground">
-            Ready to take the first step? Get in touch to schedule your free consultation
+            Готовы сделать первый шаг? Свяжитесь со мной, чтобы запланировать бесплатную консультацию
           </p>
         </div>
 
@@ -52,9 +52,9 @@ const Contact = () => {
                 <div className="w-10 h-10 bg-accent/10 rounded-lg flex items-center justify-center mb-2">
                   <Mail className="w-5 h-5 text-accent" />
                 </div>
-                <CardTitle className="text-lg">Email Me</CardTitle>
+                <CardTitle className="text-lg">Напишите мне</CardTitle>
                 <CardDescription>
-                  Get a response within 24 hours
+                  Ответ в течение 24 часов
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -74,7 +74,7 @@ const Contact = () => {
                 </div>
                 <CardTitle className="text-lg">WhatsApp</CardTitle>
                 <CardDescription>
-                  Quick questions? Chat with me
+                  Быстрые вопросы? Напишите мне
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -84,7 +84,7 @@ const Contact = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Message on WhatsApp
+                  Написать в WhatsApp
                 </a>
               </CardContent>
             </Card>
@@ -94,15 +94,15 @@ const Contact = () => {
                 <div className="w-10 h-10 bg-accent/10 rounded-lg flex items-center justify-center mb-2">
                   <Calendar className="w-5 h-5 text-accent" />
                 </div>
-                <CardTitle className="text-lg">Availability</CardTitle>
+                <CardTitle className="text-lg">Доступность</CardTitle>
                 <CardDescription>
-                  Flexible scheduling options
+                  Гибкие варианты расписания
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-foreground">
-                  Mon-Sat: 9 AM - 8 PM<br />
-                  Online & In-Person
+                  Пн-Сб: 9:00 - 20:00<br />
+                  Онлайн и очно
                 </p>
               </CardContent>
             </Card>
@@ -111,66 +111,66 @@ const Contact = () => {
           {/* Contact Form */}
           <Card className="lg:col-span-2 border-border/50">
             <CardHeader>
-              <CardTitle className="text-2xl">Send Me a Message</CardTitle>
+              <CardTitle className="text-2xl">Отправьте мне сообщение</CardTitle>
               <CardDescription>
-                Fill out the form below and I'll get back to you as soon as possible
+                Заполните форму ниже, и я свяжусь с вами как можно скорее
               </CardDescription>
             </CardHeader>
             <CardContent>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="space-y-2">
-                    <Label htmlFor="name">Your Name</Label>
+                    <Label htmlFor="name">Ваше имя</Label>
                     <Input
                       id="name"
                       name="name"
                       value={formData.name}
                       onChange={handleChange}
-                      placeholder="John Doe"
+                      placeholder="Иван Иванов"
                       required
                     />
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="email">Email Address</Label>
+                    <Label htmlFor="email">Электронная почта</Label>
                     <Input
                       id="email"
                       name="email"
                       type="email"
                       value={formData.email}
                       onChange={handleChange}
-                      placeholder="john@example.com"
+                      placeholder="ivan@example.com"
                       required
                     />
                   </div>
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="language">Language Interest</Label>
+                  <Label htmlFor="language">Интерес к языку</Label>
                   <Input
                     id="language"
                     name="language"
                     value={formData.language}
                     onChange={handleChange}
-                    placeholder="English, Chinese, or Both"
+                    placeholder="Английский, китайский или оба"
                     required
                   />
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="message">Your Message</Label>
+                  <Label htmlFor="message">Ваше сообщение</Label>
                   <Textarea
                     id="message"
                     name="message"
                     value={formData.message}
                     onChange={handleChange}
-                    placeholder="Tell me about your language learning goals..."
+                    placeholder="Расскажите мне о ваших целях изучения языка..."
                     className="min-h-[120px]"
                     required
                   />
                 </div>
 
                 <Button type="submit" variant="hero" size="lg" className="w-full">
-                  Send Message
+                  Отправить сообщение
                 </Button>
               </form>
             </CardContent>

@@ -3,12 +3,12 @@ import { CheckCircle2 } from "lucide-react";
 
 const About = () => {
   const qualifications = [
-    "Native-level fluency in English and Chinese",
-    "5+ years of professional teaching experience",
-    "Specialized in exam preparation (IELTS, TOEFL, HSK)",
-    "Proven track record with 500+ successful students",
-    "Personalized teaching methodology",
-    "Flexible online and in-person sessions"
+    "Свободное владение английским и китайским языками",
+    "Более 5 лет профессионального преподавательского опыта",
+    "Специализация на подготовке к экзаменам (IELTS, TOEFL, HSK)",
+    "Подтвержденный опыт работы с более чем 500 успешными учениками",
+    "Индивидуальная методика обучения",
+    "Гибкие онлайн и очные занятия"
   ];
 
   const scrollToContact = () => {
@@ -24,24 +24,26 @@ const About = () => {
             <div className="space-y-6">
               <div className="inline-block">
                 <span className="px-4 py-1.5 bg-accent/10 text-accent text-sm font-semibold rounded-full">
-                  About Your Tutor
+                  О вашем репетиторе
                 </span>
               </div>
               
               <h2 className="text-4xl md:text-5xl font-bold text-foreground">
-                Hi, I'm Aruzhan Kalaubaykyzy
+                Привет, я Аружан Калаубайкызы
               </h2>
               
               <p className="text-lg text-muted-foreground leading-relaxed">
-                As a passionate language educator, I believe that learning a new language opens doors to countless opportunities. 
-                With extensive experience teaching both English and Chinese, I've helped hundreds of students achieve their 
-                language goals—from business professionals to students preparing for exams.
+                Как страстный преподаватель языков, я верю, что изучение нового языка открывает двери к 
+                бесчисленным возможностям. Имея большой опыт преподавания английского и китайского языков, 
+                я помогла сотням студентов достичь своих языковых целей — от бизнес-профессионалов до 
+                студентов, готовящихся к экзаменам.
               </p>
 
               <p className="text-lg text-muted-foreground leading-relaxed">
-                My teaching philosophy centers on creating engaging, personalized lessons that adapt to your unique learning 
-                style. Whether you're starting from scratch or looking to refine your skills, I'm here to guide you every step 
-                of the way.
+                Моя философия преподавания основана на создании увлекательных, персонализированных уроков, 
+                которые адаптируются к вашему уникальному стилю обучения. Независимо от того, начинаете ли 
+                вы с нуля или хотите усовершенствовать свои навыки, я здесь, чтобы направлять вас на каждом 
+                этапе пути.
               </p>
 
               <div className="space-y-3 pt-4">
@@ -59,16 +61,16 @@ const About = () => {
                 onClick={scrollToContact}
                 className="mt-8"
               >
-                Schedule a Free Consultation
+                Запланировать бесплатную консультацию
               </Button>
             </div>
 
             {/* Right Content - Stats */}
             <div className="grid grid-cols-2 gap-6">
-              <Card title="Student Success" value="98%" description="Achieve their goals" />
-              <Card title="Average Rating" value="4.9/5" description="From student reviews" />
-              <Card title="Lesson Hours" value="3000+" description="Of teaching experience" />
-              <Card title="Languages" value="3" description="English, Chinese, Kazakh" />
+              <Card title="Успех учеников" value="98%" description="Достигают своих целей" />
+              <Card title="Средняя оценка" value="4.9/5" description="По отзывам учеников" />
+              <Card title="Часов уроков" value="3000+" description="Преподавательского опыта" />
+              <Card title="Языки" value="3" description="Английский, китайский, казахский" />
             </div>
           </div>
         </div>

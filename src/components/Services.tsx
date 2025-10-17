@@ -5,27 +5,27 @@ const Services = () => {
   const services = [
     {
       icon: Book,
-      title: "English Tutoring",
-      description: "From beginner to advanced, master English grammar, vocabulary, and conversation skills with proven teaching methods.",
-      features: ["Business English", "Academic Writing", "Conversational Practice", "Exam Preparation"]
+      title: "Уроки английского языка",
+      description: "От начального до продвинутого уровня, освойте английскую грамматику, словарный запас и разговорные навыки с проверенными методами обучения.",
+      features: ["Деловой английский", "Академическое письмо", "Разговорная практика", "Подготовка к экзаменам"]
     },
     {
       icon: MessageSquare,
-      title: "Chinese (Mandarin) Tutoring",
-      description: "Learn Mandarin Chinese with culturally immersive lessons covering speaking, reading, and writing.",
-      features: ["HSK Preparation", "Pinyin & Characters", "Daily Conversation", "Cultural Context"]
+      title: "Уроки китайского языка (путунхуа)",
+      description: "Изучайте китайский язык с культурно-насыщенными уроками, охватывающими разговорную речь, чтение и письмо.",
+      features: ["Подготовка к HSK", "Пиньинь и иероглифы", "Повседневный разговор", "Культурный контекст"]
     },
     {
       icon: Users,
-      title: "Personalized Learning",
-      description: "Every student is unique. Get customized lesson plans tailored to your goals, pace, and learning style.",
-      features: ["One-on-One Sessions", "Flexible Scheduling", "Custom Materials", "Progress Tracking"]
+      title: "Индивидуальное обучение",
+      description: "Каждый ученик уникален. Получите индивидуальные планы уроков, адаптированные под ваши цели, темп и стиль обучения.",
+      features: ["Индивидуальные занятия", "Гибкое расписание", "Персональные материалы", "Отслеживание прогресса"]
     },
     {
       icon: Trophy,
-      title: "Results-Driven Approach",
-      description: "Achieve your language goals with structured curriculum designed for measurable progress and success.",
-      features: ["Goal Setting", "Regular Assessments", "Certification Prep", "Proven Methods"]
+      title: "Результативный подход",
+      description: "Достигайте своих языковых целей с структурированной программой, разработанной для измеримого прогресса и успеха.",
+      features: ["Постановка целей", "Регулярная оценка", "Подготовка к сертификации", "Проверенные методы"]
     }
   ];
 
@@ -34,10 +34,10 @@ const Services = () => {
       <div className="container px-4 mx-auto">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-            Professional Language Services
+            Профессиональные языковые услуги
           </h2>
           <p className="text-lg text-muted-foreground">
-            Comprehensive tutoring programs designed to help you achieve fluency and confidence
+            Комплексные программы обучения, разработанные для достижения беглости и уверенности
           </p>
         </div>
 
