@@ -47,11 +47,12 @@ const Services = () => {
             return (
               <Card 
                 key={index} 
-                className="hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border-border/50"
+                className="group hover:shadow-xl transition-all duration-500 hover:-translate-y-2 border-border/50 animate-fade-in hover:border-accent/50 bg-gradient-to-br from-card to-card/50"
+                style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <CardHeader>
-                  <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mb-4">
-                    <Icon className="w-6 h-6 text-accent" />
+                  <div className="w-14 h-14 bg-gradient-to-br from-accent/20 to-accent/10 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-500 group-hover:rotate-6">
+                    <Icon className="w-7 h-7 text-accent" />
                   </div>
                   <CardTitle className="text-2xl">{service.title}</CardTitle>
                   <CardDescription className="text-base pt-2">

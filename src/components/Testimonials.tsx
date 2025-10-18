@@ -45,12 +45,13 @@ const Testimonials = () => {
           {testimonials.map((testimonial, index) => (
             <Card 
               key={index} 
-              className="hover:shadow-xl transition-all duration-300 border-border/50"
+              className="group hover:shadow-2xl transition-all duration-500 border-border/50 hover:border-accent/30 hover:-translate-y-1 animate-fade-in bg-gradient-to-br from-card to-card/50"
+              style={{ animationDelay: `${index * 0.15}s` } as React.CSSProperties}
             >
               <CardContent className="p-6 space-y-4">
                 <div className="flex gap-1">
                   {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 fill-accent text-accent" />
+                    <Star key={i} className="w-5 h-5 fill-accent text-accent group-hover:scale-110 transition-transform duration-300" style={{ transitionDelay: `${i * 0.05}s` }} />
                   ))}
                 </div>
                 

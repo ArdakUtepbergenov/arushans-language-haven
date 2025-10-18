@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Globe, MessageCircle } from "lucide-react";
+import { ArrowRight, Globe, MessageCircle, Award, Users, BookOpen } from "lucide-react";
 import heroImage from "@/assets/hero-image.jpg";
-import tutorPhoto from "@/assets/tutor-photo.jpg";
+import aruzhanPhoto from "@/assets/aruzhan-photo.jpg";
 
 const Hero = () => {
   const scrollToContact = () => {
@@ -79,14 +79,26 @@ const Hero = () => {
           </div>
 
           {/* Right side - Photo */}
-          <div className="flex justify-center lg:justify-end animate-fade-in">
-            <div className="relative">
-              <div className="absolute -inset-4 bg-gradient-to-r from-accent/20 to-primary/20 rounded-3xl blur-xl" />
-              <img 
-                src={tutorPhoto} 
-                alt="Аружан Калаубайкызы - Репетитор" 
-                className="relative rounded-2xl shadow-2xl w-full max-w-md lg:max-w-lg object-cover"
-              />
+          <div className="flex justify-center lg:justify-end animate-slide-in-right">
+            <div className="relative group">
+              <div className="absolute -inset-6 bg-gradient-to-r from-accent via-accent/50 to-primary opacity-30 rounded-3xl blur-2xl group-hover:opacity-50 transition-opacity duration-500" />
+              <div className="absolute -inset-4 bg-gradient-to-br from-accent/30 to-primary/30 rounded-3xl blur-xl animate-pulse-slow" />
+              <div className="relative overflow-hidden rounded-3xl shadow-2xl border-4 border-accent/20 backdrop-blur-sm">
+                <img 
+                  src={aruzhanPhoto} 
+                  alt="Аружан Калаубайкызы - Профессиональный репетитор английского и китайского языка" 
+                  className="w-full max-w-md lg:max-w-lg object-cover transform transition-transform duration-700 group-hover:scale-105"
+                />
+              </div>
+              {/* Floating badges */}
+              <div className="absolute -top-4 -right-4 bg-accent text-white px-4 py-2 rounded-full shadow-lg animate-float flex items-center gap-2">
+                <Award className="w-4 h-4" />
+                <span className="font-semibold text-sm">5+ лет</span>
+              </div>
+              <div className="absolute -bottom-4 -left-4 bg-primary text-white px-4 py-2 rounded-full shadow-lg animate-float-delayed flex items-center gap-2">
+                <Users className="w-4 h-4" />
+                <span className="font-semibold text-sm">500+ учеников</span>
+              </div>
             </div>
           </div>
         </div>
